@@ -20,3 +20,6 @@ saludarError("Error")
 // Para reperar esto por ejemplo s epondría el consolelog aca abajo
 
 console.log(saludarError("Error"))
+
+let resultado = saludarError("Prueba con Error")
+console.log(resultado)
