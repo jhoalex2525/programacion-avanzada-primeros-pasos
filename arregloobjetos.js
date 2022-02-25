@@ -23,6 +23,27 @@ let filtrado1 = personas.filter(function(persona){
 })
 console.log(filtrado1)
 
-// 1.1 filtrado mayor que 20 en flecha
+// 1.2 filtrado mayor que 20 en flecha
 let filtrado2 = personas.filter(persona=>persona.edad>20)
 console.log(filtrado2)
+
+// array method
+// 2. mapeo regresa un arreglo nuevo con las modificaciones
+let mapeado = personas.map(function(persona){
+    return ("ingenier@ "+persona.nombre)
+})
+console.log(mapeado)
+
+// 2.1 mapeo regresa un arreglo nuevo con las modificaciones, en flecha
+let mapeado1 = personas.map(persona=>"ingenier@ "+ persona.nombre)
+console.log(mapeado1)
+
+// array method
+// 3. foreach no retorna por tanto no se guarda en una variable. Significa: Para cada uno de los elementos
+personas.forEach(function(persona){
+    persona.nombre = "nn"
+})
+console.log(personas)
+// 3.1 foreach no retorna por tanto no se guarda en una variable. Significa: Para cada uno de los elementos. Flecha
+personas.forEach(persona=>persona.nombre = "AA")
+console.log(personas)
