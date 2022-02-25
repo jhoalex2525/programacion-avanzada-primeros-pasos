@@ -1,9 +1,12 @@
-function distanciaPlanetas(){
-    planeta1CX = prompt("Ingrese coordenada X planeta 1:")
-    planeta1CY = prompt("Ingrese coordenada Y planeta 1:")
-    planeta2CX = prompt("Ingrese coordenada X planeta 2:")
-    planeta2CY = prompt("Ingrese coordenada Y planeta 2:")    
-    distancia = Math.sqrt(Math.pow((planeta2CX-planeta1CX),2)+Math.pow((planeta2CY-planeta1CY),2))
+// Función tradicional
+function distanciaPlanetas(x1,y1,x2,y2){    
+    let distancia = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2)).toFixed(2)
+    console.log(`La distancia entre los planetas es ${distancia}`)
 }
 
-distanciaPlanetas();
+distanciaPlanetas(0,0,-10,-10);
+
+// Función flecha
+let distanciaPlanetasFlecha = (x1,y1,x2,y2) => "La distancia entre los planetas es "+ Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2)).toFixed(2)
+console.log(distanciaPlanetasFlecha(0,0,-10,-10))
+
