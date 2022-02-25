@@ -15,3 +15,4 @@ let saludar = (nombrePersona) => {
 }
 
 console.log(saludar("Juan"))
+
